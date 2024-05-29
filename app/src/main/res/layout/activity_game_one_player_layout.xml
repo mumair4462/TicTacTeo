@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="20dp"
+    tools:context=".GameOnePlayerLayout">>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_playerContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/container_player1"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/active_player"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="5sp"
+                android:paddingVertical="5sp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_p1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="19sp" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/icon_p1"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:backgroundTint="@color/container"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/x" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/container_player2"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/unactive_player"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="5sp"
+                android:paddingVertical="5sp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_p2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="19sp" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/icon_p2"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:backgroundTint="@color/container"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/o" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_winCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_p1_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                android:text="@string/spliter"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_p2_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.circularreveal.CircularRevealGridLayout
+            android:id="@+id/layout_gridContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/grid_container_shap"
+            android:columnCount="3"
+            android:paddingHorizontal="12sp"
+            android:paddingVertical="10sp"
+            android:rowCount="3">
+
+            <!-- Row One     -->
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/box1"
+                style="@style/grid_item"
+                android:onClick="onClicked"
+                tools:ignore="OnClick" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/box2"
+                style="@style/grid_item"
+                android:onClick="onClicked"
+                tools:ignore="OnClick" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/box3"
+                style="@style/grid_item"
+                android:onClick="onClicked"
+                tools:ignore="OnClick" />
+
+            <!-- Row Two   -->
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/box4"
+                style="@style/grid_item"
+                android:onClick="onClicked"
+                tools:ignore="OnClick" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/box5"
+                style="@style/grid_item"
+                android:onClick="onClicked"
+                tools:ignore="OnClick" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/box6"
+                style="@style/grid_item"
+                android:onClick="onClicked"
+                tools:ignore="OnClick" />
+
+            <!-- Row Three -->
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/box7"
+                style="@style/grid_item"
+                android:onClick="onClicked"
+                tools:ignore="OnClick" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/box8"
+                style="@style/grid_item"
+                android:onClick="onClicked"
+                tools:ignore="OnClick" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/box9"
+                style="@style/grid_item"
+                android:onClick="onClicked"
+                tools:ignore="OnClick" />
+
+
+        </com.google.android.material.circularreveal.CircularRevealGridLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

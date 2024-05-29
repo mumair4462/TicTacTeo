@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/cardbackground"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Over"
+            android:textSize="40dp"
+            android:typeface="monospace"
+            android:textColor="@color/btn"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_winlogo"
+            android:layout_width="180dp"
+            android:layout_height="110dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/draw_game" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_winnerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:letterSpacing="0.1"
+            android:text="Winner"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:typeface="monospace"
+            android:paddingVertical="10sp"/>
+
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_gotoHome"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_home"
+                android:backgroundTint="@color/btn"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="25dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_restartGame"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_restart"
+                android:backgroundTint="@color/btn"
+                android:paddingVertical="15dp"
+                android:paddingHorizontal="25dp" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

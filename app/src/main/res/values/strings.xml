@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+
+    <!-- splesh screen  -->
+    <string name="logo_desc">This is logo img</string>
+    <string name="loading">Loading...</string>
+
+    <!-- Main screen  -->
+    <string name="title">Enter Player Names</string>
+    <string name="p1">Player One*</string>
+    <string name="p2">Player Two*</string>
+    <string name="start_btn">START GAME</string>
+    <string name="spliter">-</string>
+
+    <!--Main Manu   -->
+    <string name="twoPlayer">Two Players</string>
+    <string name="onePlayer">One Players</string>
+
+    <!-- Single player screen -->
+    <string name="playername">Enter Player Name</string>
+    <string name="hindplayername">Player Name*</string>
+    <string name="easy">Easy</string>
+    <string name="hard">Hard</string>
+    <string name="game_mode">Game Mode</string>
+
+    <string-array name="mode">
+        <item>Easy</item>
+        <item>Hard</item>
+    </string-array>
+</resources>

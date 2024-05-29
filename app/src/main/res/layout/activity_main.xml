@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@color/background"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:layout_marginBottom="60dp"
+        android:letterSpacing="0.1"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_player1"
+        android:hint="@string/p1"
+        android:drawableLeft="@drawable/ic_x"
+        style="@style/inputbox_style"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_player2"
+        android:layout_marginTop="20dp"
+        android:hint="@string/p2"
+        android:drawableLeft="@drawable/ic_o"
+        android:layout_marginBottom="40dp"
+        style="@style/inputbox_style"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_gameStart"
+        android:paddingVertical="14sp"
+        style="@style/button_design"
+        android:text="@string/start_btn"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
